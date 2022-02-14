@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="my project">
+    <meta name="keywords" content="HTML,CSS,JavaScript,jQuery">
+    <meta name="author" content="Makho kukhianidze">
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="My project" />
+    <meta property="og:title" content="My Practice work" />
+    <meta property="og:description" content="jQuery - Html,Css,JavaScript,jQuery" />
+    <meta property="og:image" content="assets/icons/m.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>My jQuery tutorial - web-page</title>
+    <link rel="icon" href="assets/icons/m.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script src="assets/jQuery/jQuery.js"></script>
+</head>
+
+<body>
+    <div class="tabMenu">
+        <button class="menuBtn" onclick="tabMenuBtn(event, 'LevelOne')">Level 1</button>
+        <button class="menuBtn" onclick="tabMenuBtn(event, 'LevelTwo')">Level 2</button>
+        <button class="menuBtn" onclick="tabMenuBtn(event, 'LevelThree')">Level 3</button>
+        <button class="menuBtn" onclick="tabMenuBtn(event, 'LevelFour')">Level 4</button>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to Up">Up</button>
+    <div class="centerButton">
+        <h1>jQuery Tutorial (w3schools)</h1>
+        <p id="infoJquery">jQuery greatly simplifies JavaScript programming.</p>
+        <p id="infoJquery" class="bottom">jQuery is easy to learn.</p>
+        <div class="tabMenu">
+            <button id="StartJqueryTutotrial" class="menuBtn" onclick="tabMenuBtn(event, 'LevelOne')">Start </button>
+        </div>
+    </div>
+    <div id="LevelOne" class="tabcontent">
+        <div class="main-box">
+            <div class="box">
+                <h2>lesson 1</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery Introduction</h3>
+                <p>jQuery is a JavaScript Library.</p>
+            </div>
+            <div class="box">
+                <h2>lesson 2</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>What You Should Already Know</h3>
+                <p>HTML, CSS, JavaScript,</p>
+            </div>
+            <div class="box">
+                <h2>Lesson 3</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The jQuery library contains the following features:</h3>
+                <ul>
+                    <li>- HTML/DOM manipulation</li>
+                    <li>- CSS manipulation</li>
+                    <li>- HTML event methods</li>
+                    <li>- Effects and animations</li>
+                    <li>- AJAX</li>
+                    <li>- Utilities</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 4</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>Why jQuery?</h3>
+                <p>jQuery has plugins for almost any task out there.</p>
+            </div>
+            <div class="box">
+                <h2>Lesson 5</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>Adding jQuery to Your Web Pages</h3>
+                <ul>
+                    <li>- Download the jQuery library from jQuery.com</li>
+                    <li>- Include jQuery from a CDN, like Google</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 6</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>Downloading jQuery and connect</h3>
+                <ul>
+                    <li>- &lt;head&gt;</li>
+                    <li>- &lt;script src="jquery-3.5.1.min.js"&gt; &lt;/script&gt;</li>
+                    <li>- &lt;/head&gt;</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 7</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery CDN and connect</h3>
+                <ul>
+                    <li>- &lt;head&gt;</li>
+                    <li>- &lt;script src="https://ajax.google
+                        apis.com/ajax/libs/jquery/
+                        3.5.1/jquery.min.js"&gt; &lt;/script&gt;</li>
+                    <li>- &lt;/head&gt;</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 8</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery Syntax</h3>
+                <p>Basic syntax is:</p>
+                <ul>
+                    <li>$(selector).action()</li>
+                </ul>
+                <ul>
+                    <li>- Examples:</li>
+                    <li>- $(this).hide() - hides the current element.</li>
+                    <li>- $("p").hide() - hides all &lt;p&gt; elements.</li>
+                    <li>- $(".test").hide() - hides all elements with class="test".</li>
+                    <li>- $("#test").hide() - hides the element with id="test"</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 9</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The Document Ready Event</h3>
+                <p>This is to prevent any jQuery code from running before the document is finished loading (is
+                    ready).
+                </p>
+                <ul>
+                    <li>- $(document).ready(function(){</li>
+                    <li>- // jQuery methods go here...</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 10</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery Selectors</h3>
+                <p>jQuery selectors allow you to select and manipulate HTML element(s).</p>
+                <p>All selectors in jQuery start with the dollar sign and parentheses:</p>
+                <ul>
+                    <li>- $( )</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 11</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The element Selector</h3>
+                <p>The jQuery element selector selects elements based on the element name.</p>
+                <p>You can select all &lt;p&gt; elements on a page like this:</p>
+                <ul>
+                    <li>- $("p")</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 12</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The element Selector Example</h3>
+                <p>When a user clicks on a button, all &lt;p&gt; elements will be hidden:</p>
+                <ul>
+                    <li>- $(document).ready(function(){</li>
+                    <li>- $("button").click(function(){</li>
+                    <li>- $("p").hide();</li>
+                    <li>- });</li>
+                    <li>- });</li>
+                    <p class="paraOne">Paragraph Text</p>
+                    <li>
+                        <button id="btnOne" class="buttonStyle">Click me to hide paragraph</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 13</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The #id Selector</h3>
+                <p>The jQuery #id selector uses the id attribute of an HTML tag to find the specific element.</p>
+                <ul>
+                    <li>- $("#test")</li>
+                </ul>
+                <ul>
+                    <li>- $(document).ready(function(){</li>
+                    <li>- $("button").click(function(){</li>
+                    <li>- $("#test").hide();</li>
+                    <li>- });</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 14</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The .class Selector</h3>
+                <p>The jQuery .class selector finds elements with a specific class.</p>
+                <ul>
+                    <li>- $(".test")</li>
+                </ul>
+                <ul>
+                    <li>- $(document).ready(function(){</li>
+                    <li>- $("button").click(function(){</li>
+                    <li>- $(".test").hide();</li>
+                    <li>- });</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 15</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery Syntax For Event Methods</h3>
+                <ul>
+                    <li>- $("p").click(function(){</li>
+                    <li>- // action goes here!!</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 16</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery Event Example</h3>
+                <p>When a click event fires on a &lt;p&gt; element; hide the current &lt;p&gt; element:</p>
+                <ul>
+                    <li>- $(document).ready(function(){</li>
+                    <li>- $("p").click(function(){</li>
+                    <li>- $(this).hide();</li>
+                    <li>- });</li>
+                    <li>- });</li>
+                    <p class="paraTwo">I am paragraph ,If you click on me, I will disappear.</p>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 17</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The dblclick() method</h3>
+                <p>The function is executed when the user double-clicks on the HTML element:</p>
+                <ul>
+                    <li>- $("p").dblclick( function(){</li>
+                    <li>- $(this).hide();</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 18</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The mouseenter() method</h3>
+                <p>The function is executed when the mouse pointer enters the HTML element:</p>
+                <ul>
+                    <li>- $("#p1").mouseenter( function(){</li>
+                    <li>- alert("You entered p1!");</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 19</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The mouseleave() method</h3>
+                <p>The function is executed when the mouse pointer leaves the HTML element:</p>
+                <ul>
+                    <li>- $("#p1").mouseleave( function(){</li>
+                    <li>- alert("Bye! You now leave p1!");</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Finish level 1</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <button class="menuBtn btnEight" onclick="tabMenuBtn(event, 'LevelTwo')">Congratulation! Next
+                    level!</button>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div id="LevelTwo" class="tabcontent">
+        <div class="main-box">
+            <div class="box">
+                <h2>Lesson 20</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The mousedown() method</h3>
+                <p>The function is executed, when the left, middle or right mouse button is pressed down, while the
+                    mouse is over the HTML element:</p>
+                <ul>
+                    <li>- $("#p1").mousedown(function(){</li>
+                    <li>- alert("Mouse down over p1!");</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 21</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The mouseup() method</h3>
+                <p>The function is executed, when the left, middle or right mouse button is released, while the
+                    mouse is over the HTML element:</p>
+                <ul>
+                    <li>- $("#p1").mouseup(function(){</li>
+                    <li>- alert("Mouse up over p1!");</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 22</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The hover() method</h3>
+                <p>The first function is executed when the mouse enters the HTML element, and the second function is
+                    executed when the mouse leaves the HTML element:</p>
+                <ul>
+                    <li>- $("#p1").hover(function(){</li>
+                    <li>- alert("You entered p1!");</li>
+                    <li>- },</li>
+                    <li>- function(){</li>
+                    <li>- alert("Bye! You now leave p1!");</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 23</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The focus() method</h3>
+                <p>The function is executed when the form field gets focus:</p>
+                <ul>
+                    <li>- $("input").focus(function(){</li>
+                    <li>- $(this).css("background-color", "#cccccc");</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 24</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The blur() method</h3>
+                <p>The function is executed when the form field loses focus:</p>
+                <ul>
+                    <li>- $("input").blur(function(){</li>
+                    <li>- $(this).css("background-color", "#ffffff");</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 25</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The on() method</h3>
+                <p>The on() method attaches one or more event handlers for the selected elements. Attach &lt;a&gt;
+                    click event to a
+                <p> element:</p>
+                <ul>
+                    <li>- $("p").on("click", function(){</li>
+                    <li>- $(this).hide();</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 26</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The on() - example</h3>
+                <ul>
+                    <li>- $(document).ready(function(){</li>
+                    <li>- $("p").on({ mouseenter: function(){</li>
+                    <li>- $(this).css("background-color", "lightgray");},</li>
+                    <li>- mouseleave: function(){</li>
+                    <li>- $(this).css("background-color", "lightblue");},</li>
+                    <li>- click: function(){</li>
+                    <li>- $(this).css("background-color", "yellow");} }); });</li>
+                    <p class="paraThree">Click or move the mouse pointer.</p>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 27</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery hide() and show()</h3>
+                <p>With jQuery, you can hide and show HTML elements with the hide() and show() methods:</p>
+                <ul>
+                    <li>- $("#hide").click(function(){</li>
+                    <li>- $("p").hide();</li>
+                    <li>- });</li>
+
+                    <li>- $("#show").click(function(){</li>
+                    <li>- $("p").show();</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 28</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery hide() and show() Syntax</h3>
+                <p>The optional speed parameters:"slow", "fast", or milliseconds.</p>
+                <ul>
+                    <li>- $(selector).hide(speed, callback);</li>
+                    <li>- $(selector).show(speed, callback);</li>
+                </ul>
+                <ul>
+                    <li>- $("button").click(function(){</li>
+                    <li>- $("p").hide(1000);</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 29</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery toggle()</h3>
+                <p>You can also toggle between hiding and showing an element with the toggle() method.</p>
+                <ul>
+                    <li>- $("button").click(function(){</li>
+                    <li>- $("p").toggle();</li>
+                    <li>- });</li>
+                </ul>
+                <p>Syntax:</p>
+                <ul>
+                    <li>$(selector).toggle(speed, callback);</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 30</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery Fading Methods</h3>
+                <p>jQuery has the following fade methods:</p>
+                <ul>
+                    <li>- fadeIn()</li>
+                    <li>- fadeOut()</li>
+                    <li>- fadeToggle()</li>
+                    <li>- fadeTo()</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 31</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery fadeIn() Method</h3>
+                <p>The jQuery fadeIn() method is used to fade in a hidden element.</p>
+                <p>Syntax:</p>
+                <ul>
+                    <li>- $(selector).fadeIn(speed, callback);</li>
+                </ul>
+                <p>The optional speed parameter specifies the duration of the effect. It can take the following values:
+                    "slow", "fast", or milliseconds.</p>
+                <p>The optional callback parameter is a function to be executed after the fading completes.</p>
+            </div>
+            <div class="box">
+                <h2>Lesson 32</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>The fadeIn() example - different parameters:</h3>
+                <ul>
+                    <li>- $(document).ready(function(){</li>
+                    <li>- $("button").click(function(){</li>
+                    <li>- $("#div1").fadeIn();</li>
+                    <li>- $("#div2").fadeIn("slow");</li>
+                    <li>- $("#div3").fadeIn(3000);</li>
+                    <li>- });</li>
+                    <li>- });</li>
+                </ul>
+                <div class="block-3">
+                    <div id="div1" class="red"></div>
+                    <div id="div2" class="green"></div>
+                    <div id="div3" class="blue"></div>
+                </div>
+                <button id="btnSix" class="buttonStyle">Click to fade in boxes</button>
+            </div>
+            <div class="box">
+                <h2>Lesson 33</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery fadeOut() Method</h3>
+                <p>The jQuery fadeOut() method is used to fade out a visible element.</p>
+                <p>Syntax:</p>
+                <ul>
+                    <li>$(selector).fadeOut(speed, callback);</li>
+                </ul>
+                <ul>
+                    <li>- $(document).ready(function(){</li>
+                    <li>- $("button").click(function(){</li>
+                    <li>- $("#div1").fadeOut();</li>
+                    <li>- $("#div2").fadeOut("slow");</li>
+                    <li>- $("#div3").fadeOut(3000);</li>
+                    <li>- });</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 34</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery fadeToggle() Method</h3>
+                <p>The jQuery fadeToggle() method toggles between the fadeIn() and fadeOut() methods.</p>
+                <p>Syntax:</p>
+                <ul>
+                    <li>$(selector).fadeToggle(speed, callback);</li>
+                </ul>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li>- $("button").click(function(){</li>
+                    <li>- $("#div1").fadeToggle();</li>
+                    <li>- $("#div2").fadeToggle("slow");</li>
+                    <li>- $("#div3").fadeToggle(3000);</li>
+                    <li>- });</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Lesson 35</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery fadeTo() Method</h3>
+                <p>The jQuery fadeTo() method allows fading to a given opacity (value between 0 and 1).</p>
+                <p>Syntax:</p>
+                <ul>
+                    <li>$(selector).fadeTo(speed,opacity, callback);</li>
+                </ul>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li>- $("button").click(function(){</li>
+                    <li>- $("#div1").fadeTo("slow", 0.4);</li>
+                    <li>- $("#div2").fadeTo("slow", 0.7);</li>
+                    <li>- $("#div3").fadeTo("slow", 0.15);</li>
+                    <li>- });</li>
+                    <li>- });</li>
+                </ul>
+                <div class="block-3">
+                    <div id="div4" class="red"></div>
+                    <div id="div5" class="green"></div>
+                    <div id="div6" class="blue"></div>
+                </div>
+                <button id="btnSeven" class="buttonStyle">Click to fade boxes</button><br><br>
+            </div>
+            <div class="box">
+                <h2>lesson 36</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery Sliding Methods</h3>
+                <p>With jQuery you can create a sliding effect on elements.</p>
+                <p>jQuery has the following slide methods:</p>
+                <ul>
+                    <li>slideDown()</li>
+                    <li>slideUp()</li>
+                    <li>slideToggle()</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 37</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery slideDown() Method</h3>
+                <p>The jQuery slideDown() method is used to slide down an element.</p>
+                <p>Syntax:</p>
+                <ul>
+                    <li>$(selector).slideDown(speed,callback);</li>
+                </ul>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li>$("#flip").click(function(){</li>
+                    <li>$("#panel").slideDown("slow");</li>
+                    <li>});</li>
+                    <li>});</li>
+                    <li>
+                        <div id="flip">I am div - Click to slide down panel</div>
+                    </li>
+                    <li>
+                        <div id="panel">I am div - Hello world!</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 38</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery slideUp() Method</h3>
+                <p>The jQuery slideUp() method is used to slide up an element.</p>
+                <p>Syntax:</p>
+                <ul>
+                    <li>$(selector).slideUp(speed,callback);</li>
+                </ul>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li>$("#flip").click(function(){</li>
+                    <li>$("#panel").slideUp("slow");</li>
+                    <li>});</li>
+                    <li>});</li>
+                    <li>
+                        <div id="flip">I am div - Click to slide up panel</div>
+                    </li>
+                    <li>
+                        <div id="panel">I am div - Hello world!</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Finish level 2</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <button class="menuBtn btnEight" onclick="tabMenuBtn(event, 'LevelThree')">Congratulation! Next
+                    level!</button>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div id="LevelThree" class="tabcontent">
+        <div class="main-box">
+            <div class="box">
+                <h2>lesson 39</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery slideToggle() Method</h3>
+                <p>The jQuery slideToggle() method toggles between the slideDown() and slideUp() methods.</p>
+                <p>Syntax:</p>
+                <ul>
+                    <li>$(selector).slideToggle(speed,callback);</li>
+                </ul>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li>$("#flip").click(function(){</li>
+                    <li>$("#panel").slideToggle("slow");</li>
+                    <li>});</li>
+                    <li>});</li>
+                    <li>
+                        <div id="flip">I am div - Click to slide the panel down or up</div>
+                    </li>
+                    <li>
+                        <div id="panel">I am div - Hello world!</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 40</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery Animations - The animate() Method</h3>
+                <p>The jQuery animate() method is used to create custom animations.</p>
+                <p>Syntax:</p>
+                <ul>
+                    <li>$(selector).animate({params}, speed, callback);</li>
+                </ul>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li>$("button").click(function(){</li>
+                    <li>$("div").animate({left: '250px'});</li>
+                    <li>});</li>
+                    <li>});</li>
+                    <li>
+                        <div class="animation"></div>
+                    </li>
+                    <li><button id="btnAnimation" class="buttonStyle">Start Animation</button></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 41</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery animate()</h3>
+                <p>By default, all HTML elements have a static position, and cannot be moved.</p>
+                <p>To manipulate the position, remember to first set the CSS position property of the element to
+                    relative, fixed, or absolute!</p>
+            </div>
+            <div class="box">
+                <h2>lesson 42</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery animate() - Using Relative Values</h3>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li>$("button").click(function(){</li>
+                    <li>$("div").animate({</li>
+                    <li>left: '250px',</li>
+                    <li>height: '+=150px',</li>
+                    <li>width: '+=150px'</li>
+                    <li>});</li>
+                    <li>});</li>
+                    <li>});</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 43</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery animate() - Using Pre-defined Values</h3>
+                <p>You can even specify a property's animation value as "show", "hide", or "toggle":</p>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li>$("button").click(function(){</li>
+                    <li>$("div").animate({</li>
+                    <li>height: 'toggle',</li>
+                    <li>width: 'toggle'</li>
+                    <li>});</li>
+                    <li>});</li>
+                    <li>});</li>
+                    <li>
+                        <div id="anime" class="animation-Two"></div>
+                    </li>
+                    <li><button id="btnAnime" class="buttonStyle">Start Animation</button></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 44</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery animate() - Uses Queue Functionality</h3>
+                <p>if you want to perform different animations after each other, we take advantage of the queue
+                    functionality:</p>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li>$("button").click(function(){</li>
+                    <li>var div = $("div");</li>
+                    <li>div.animate({height: '300px', opacity: '0.4'}, "slow");</li>
+                    <li>div.animate({width: '300px', opacity: '0.8'}, "slow");</li>
+                    <li>div.animate({height: '100px', opacity: '0.4'}, "slow");</li>
+                    <li>div.animate({width: '100px', opacity: '0.8'}, "slow");</li>
+                    <li>});</li>
+                    <li>});</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 44</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery animate() - Uses Queue Functionality - Two</h3>
+                <p>The example below first moves the &lt;div&gt; element to the right, and then increases the font size
+                    of the text:</p>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li>$("button").click(function(){</li>
+                    <li>var div = $("div");</li>
+                    <li>div.animate({left: '100px'}, "slow");</li>
+                    <li>div.animate({fontSize: '3em'}, "slow");</li>
+                    <li>});</li>
+                    <li>});</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 44</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery stop() Method</h3>
+                <p>The jQuery stop() method is used to stop an animation or effect before it is finished.</p>
+                <p>The stop() method works for all jQuery effect functions, including sliding, fading and custom
+                    animations.</p>
+                <p>Syntax:</p>
+                <ul>
+                    <li>$(selector).stop(stopAll,goToEnd);</li>
+                </ul>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li>$("#flip").click(function(){</li>
+                    <li>$("#panel").slideDown(5000);</li>
+                    <li>});</li>
+                    <li>$("#stop").click(function(){</li>
+                    <li>$("#panel").stop();</li>
+                    <li>});</li>
+                    <li>});</li>
+                    <li class="bg-color">Button</li>
+                    <li class="bg-color">div id="flip"</li>
+                    <li class="bg-color">div id="panel"</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 45</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery Callback Functions</h3>
+                <p>JavaScript statements are executed line by line. However, with effects, the next line of code can be
+                    run even though the effect is not finished. This can create errors.</p>
+                <p>To prevent this, you can create a callback function.</p>
+                <p>A callback function is executed after the current effect is finished.</p>
+                <p>Typical syntax:</p>
+                <ul>
+                    <li>$(selector).hide(speed,callback);</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 46</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery Callback Functions - Example</h3>
+                <p>The example below has a callback parameter that is a function that will be executed after the hide
+                    effect is completed:</p>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li>$("button").click(function(){</li>
+                    <li>$("p").hide("slow", function(){</li>
+                    <li>alert("The paragraph is now hidden");</li>
+                    <li>});</li>
+                    <li>});</li>
+                    <li>});</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 47</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery Callback Functions - Example Two</h3>
+                <p>The example below has no callback parameter, and the alert box will be displayed before the hide
+                    effect is completed:</p>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li>$("button").click(function(){</li>
+                    <li>$("p").hide(1000);</li>
+                    <li>alert("The paragraph is now hidden");</li>
+                    <li>});</li>
+                    <li>});</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 48</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery Method Chaining</h3>
+                <p>However, there is a technique called chaining, that allows us to run multiple jQuery commands, one
+                    after the other, on the same element(s).</p>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li>$("button").click(function(){</li>
+                    <li>$("#p1").css("color", "red").slideUp(2000).slideDown(2000);</li>
+                    <li>});</li>
+                    <li>});</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 49</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery Method Chaining - Example</h3>
+                <p>We could also have added more method calls if needed.</p>
+                <p>When chaining, the line of code could become quite long. However, jQuery is not very strict on the
+                    syntax; you can format it like you want, including line breaks and indentations.</p>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li>$("button").click(function(){</li>
+                    <li>$("#p1").css("color", "red")</li>
+                    <li>.slideUp(2000)</li>
+                    <li>.slideDown(2000);</li>
+                    <li>});</li>
+                    <li>});</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 50</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery DOM Manipulation</h3>
+                <p>Three simple, but useful, jQuery methods for DOM manipulation are:</p>
+                <ul>
+                    <li>- text() - Sets or returns the text content of selected elements</li>
+                    <li>- html() - Sets or returns the content of selected elements (including HTML markup)</li>
+                    <li>- val() - Sets or returns the value of form fields</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 51</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery DOM Manipulation - Example</h3>
+                <p>Three simple, but useful, jQuery methods for DOM manipulation are:</p>
+                <ul>
+                    <li>- $(document).ready(function(){</li>
+                    <li>- $("#btn1").click(function(){</li>
+                    <li>- alert("Text: " + $("#test").text());</li>
+                    <li>- });</li>
+                    <li>- $("#btn2").click(function(){</li>
+                    <li>- alert("HTML: " + $("#test").html());</li>
+                    <li>- });</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 52</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery DOM Manipulation - Example two</h3>
+                <p>The following example demonstrates how to get the value of an input field with the jQuery val()
+                    method:</p>
+                <ul>
+                    <li>- $(document).ready(function(){</li>
+                    <li>- $("button").click(function(){</li>
+                    <li>- alert("Value: " + $("#test").val());</li>
+                    <li>- });</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 53</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>Get Attributes - attr()</h3>
+                <p>The jQuery attr() method is used to get attribute values.</p>
+                <p>The following example demonstrates how to get the value of the href attribute in a link:</p>
+                <ul>
+                    <li>- $(document).ready(function(){</li>
+                    <li>- $("button").click(function(){</li>
+                    <li>- alert($("#w3s").attr("href"));</li>
+                    <li>- });</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 54</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>Set Content - text(), html(), and val()</h3>
+                <ul>
+                    <li>- $(document).ready(function(){</li>
+                    <li>- $("#btn1").click(function(){</li>
+                    <li>- $("#test1").text("Hello world!");</li>
+                    <li>- });</li>
+                    <li>- $("#btn2").click(function(){</li>
+                    <li>- $("#test2").html("&lt;b&gt;Hello world!&lt;/b&gt;");</li>
+                    <li>- });</li>
+                    <li>- $("#btn3").click(function(){</li>
+                    <li>- $("#test3").val("Dolly Duck");</li>
+                    <li>- });</li>
+                    <li>- });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 55</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>A Callback Function for text(), html(), and val()</h3>
+                <p>The following example demonstrates text() and html() with a callback function:</p>
+                <ul>
+                    <li> $(document).ready(function(){</li>
+                    <li> $("#btn1").click(function(){</li>
+                    <li> $("#test1").text(function(i, origText){</li>
+                    <li> return "Old text: " + origText + " New text: Hello world! (index: " + i + ")";</li>
+                    <li> });</li>
+                    <li> });</li>
+                    <li> $("#btn2").click(function(){</li>
+                    <li> $("#test2").html(function(i, origText){</li>
+                    <li> return "Old html: " + origText + " New html: Hello <b>world!</b> (index: " + i + ")";</li>
+                    <li> });</li>
+                    <li> });</li>
+                    <li> });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 56</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>Set Attributes - attr()</h3>
+                <p>The jQuery attr() method is also used to set/change attribute values.</p>
+                <p>The following example demonstrates how to change (set) the value of the href attribute in a link:</p>
+                <ul>
+                    <li>$("button").click(function(){</li>
+                    <li>$("#w3s").attr("href", "https://www.w3schools.com/jquery/");</li>
+                    <li>});</li>
+                </ul>
+                <p>The attr() method also allows you to set multiple attributes at the same time.</p>
+                <p>The following example demonstrates how to set both the href and title attributes at the same time:
+                </p>
+                <ul>
+                    <li>$("button").click(function(){</li>
+                    <li>$("#w3s").attr({</li>
+                    <li>"href" : "https://www.w3schools.com/jquery/",</li>
+                    <li>"title" : "W3Schools jQuery Tutorial"</li>
+                    <li>});</li>
+                    <li>});</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 57</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>A Callback Function for attr()</h3>
+                <p>The jQuery method attr(), also comes with a callback function. The callback function has two
+                    parameters: the index of the current element in the list of elements selected and the original (old)
+                    attribute value. You then return the string you wish to use as the new attribute value from the
+                    function.</p>
+                <p>The following example demonstrates attr() with a callback function:</p>
+                <ul>
+                    <li> $("button").click(function(){</li>
+                    <li> $("#w3s").attr("href", function(i, origValue){</li>
+                    <li> return origValue + "/jquery/";</li>
+                    <li> });</li>
+                    <li> });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 58</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>Add New HTML Content</h3>
+                <p>We will look at four jQuery methods that are used to add new content:</p>
+                <ul>
+                    <li>- append() - Inserts content at the end of the selected elements</li>
+                    <li>- prepend() - Inserts content at the beginning of the selected elements</li>
+                    <li>- after() - Inserts content after the selected elements</li>
+                    <li>- before() - Inserts content before the selected elements</li>
+                </ul>
+                <h3>jQuery append() Method</h3>
+                <p>The jQuery append() method inserts content AT THE END of the selected HTML elements.</p>
+                <ul>
+                    <li>$("p").append("Some appended text.");</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 59</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery prepend() Method</h3>
+                <p>The jQuery prepend() method inserts content AT THE BEGINNING of the selected HTML elements.</p>
+                <ul>
+                    <li>- $("p").prepend("Some prepended text.");</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Finish level 3</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <button class="menuBtn btnEight" onclick="tabMenuBtn(event, 'LevelFour')">Congratulation! Next
+                    level!</button>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div id="LevelFour" class="tabcontent">
+        <div class="main-box">
+            <div class="box">
+                <h2>lesson 60</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>Add Several New Elements With append() and prepend()</h3>
+                <p>The jQuery prepend() method inserts content AT THE BEGINNING of the selected HTML elements.</p>
+                <ul>
+                    <li>function appendText() {</li>
+                    <li> var txt1 = "&lt;p&gt;Text.&lt;/p&gt;"; // Create text with HTML </li>
+                    <li>var txt2 = $("&lt;p&gt; &lt;/p&gt;").text("Text."); // Create text with jQuery</li>
+                    <li>var txt3 = document.createElement("p");</li>
+                    <li>txt3.innerHTML = "Text."; // Create text with DOM</li>
+                    <li>$("body").append(txt1, txt2, txt3); // Append new elements</li>
+                    <li>}</li>
+                    <li>&lt;button&gt;onclick="appendText()"> Append text&lt;/button&gt;</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 61</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery after() and before() Methods</h3>
+                <p>The jQuery after() method inserts content AFTER the selected HTML elements.</p>
+                <p>The jQuery before() method inserts content BEFORE the selected HTML elements.</p>
+                <ul>
+                    <li>$("img").after("Some text after");</li>
+                    <li>$("img").before("Some text before");</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 62</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>Add Several New Elements With after() and before()</h3>
+                <ul>
+                    <li>function afterText() {</li>
+                    <li>var txt1 = "&lt;b&gt;I &lt;/b&gt;"; // Create element with HTML</li>
+                    <li>var txt2 = $("&lt;i&gt; &lt;/i&gt;").text("love "); // Create with jQuery</li>
+                    <li>var txt3 = document.createElement("b"); // Create with DOM</li>
+                    <li>txt3.innerHTML = "jQuery!";</li>
+                    <li>$("img").after(txt1, txt2, txt3); // Insert new elements after img</li>
+                    <li> }</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 63</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>To remove elements and content, there are mainly two jQuery methods:</h3>
+                <ul>
+                    <li>remove() - Removes the selected element (and its child elements)</li>
+                    <li>empty() - Removes the child elements from the selected element</li>
+                </ul>
+                <h3>jQuery remove() Method</h3>
+                <p>The jQuery remove() method removes the selected element(s) and its child elements.</p>
+                <ul>
+                    <li>$("#div1").remove();</li>
+                </ul>
+                <h3>jQuery empty() Method</h3>
+                <p>The jQuery empty() method removes the child elements of the selected element(s).</p>
+                <ul>
+                    <li>$("#div1").empty();</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 64</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>Filter the Elements to be Removed</h3>
+                <ul>
+                    <li>The jQuery remove() method also accepts one parameter, which allows you to filter the elements
+                        to be
+                        removed.</li>
+                    <li>The parameter can be any of the jQuery selector syntaxes.</li>
+                    <li>The following example removes all &lt;p&gt; elements with class="test":</li>
+                </ul>
+                <ul>
+                    <li>$("p").remove(".test");</li>
+                </ul>
+                <h3>This example removes all &lt;p&gt; elements with class="test" and class="demo": </h3>
+                <ul>
+                    <li>$("p").remove(".test, .demo");</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 65</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery Manipulating CSS</h3>
+                <p>jQuery has several methods for CSS manipulation. We will look at the following methods:</p>
+                <ul>
+                    <li>addClass() - Adds one or more classes to the selected elements</li>
+                    <li>removeClass() - Removes one or more classes from the selected elements</li>
+                    <li>toggleClass() - Toggles between adding/removing classes from the selected elements</li>
+                    <li>css() - Sets or returns the style attribute</li>
+                </ul>
+                <h3>Example Stylesheet</h3>
+                <p>The following stylesheet will be used for all the examples on this page:</p>
+                <ul>
+                    <li> .important {</li>
+                    <li> font-weight: bold;</li>
+                    <li> font-size: xx-large;</li>
+                    <li> }</li>
+                    <li> .blue {</li>
+                    <li> color: blue;</li>
+                    <li>}</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 66</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery addClass() Method</h3>
+                <p>The following example shows how to add class attributes to different elements. Of course you can
+                    select multiple elements, when adding classes:</p>
+                <ul>
+                    <li>$("button").click(function(){</li>
+                    <li>$("h1, h2, p").addClass("blue");</li>
+                    <li>$("div").addClass("important");</li>
+                    <li>});</li>
+                </ul>
+                <h3>You can also specify multiple classes within the addClass() method:</h3>
+                <ul>
+                    <li>$("button").click(function(){</li>
+                    <li>$("#div1").addClass("important blue");</li>
+                    <li>});</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 67</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery removeClass() Method</h3>
+                <p>The following example shows how to remove a specific class attribute from different elements:</p>
+                <ul>
+                    <li>$("button").click(function(){</li>
+                    <li>$("h1, h2, p").removeClass("blue");</li>
+                    <li>});</li>
+                </ul>
+                <h3>jQuery toggleClass() Method</h3>
+                <p>The following example will show how to use the jQuery toggleClass() method. This method toggles
+                    between</p>
+                <p>adding/removing classes from the selected elements:</p>
+                <ul>
+                    <li>$("button").click(function(){</li>
+                    <li>$("h1, h2, p").toggleClass("blue");</li>
+                    <li>});</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 68</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery css() Method</h3>
+                <p>The css() method sets or returns one or more style properties for the selected elements.</p>
+                <h3>Return a CSS Property</h3>
+                <p>To return the value of a specified CSS property, use the following syntax:</p>
+                <ul>
+                    <li>css("propertyname");</li>
+                </ul>
+                <p>The following example will return the background-color value of the FIRST matched element:</p>
+                <ul>
+                    <li>$("p").css("background-color");</li>
+                </ul>
+                <h3>Set a CSS Property</h3>
+                <p>To set a specified CSS property, use the following syntax:</p>
+                <ul>
+                    <li>css("propertyname","value");</li>
+                    <li>The following example will set the background-color value for ALL matched elements:</li>
+                    <li>$("p").css("background-color", "yellow");</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 69</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>Set Multiple CSS Properties</h3>
+                <p>To set multiple CSS properties, use the following syntax:</p>
+                <ul>
+                    <li>css({"propertyname":"value", "propertyname": "value",...});</li>
+                </ul>
+                <p>The following example will set a background-color and a font-size for ALL matched elements:</p>
+                <ul>
+                    <li>$("p").css({"background-color": "yellow", "font-size": "200%"});</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 71</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery Dimension Methods</h3>
+                <p>With jQuery, it is easy to work with the dimensions of elements and browser window.</p>
+                <p>jQuery has several important methods for working with dimensions:</p>
+                <ul>
+                    <p>width()</p>
+                    <p>height()</p>
+                    <p>innerWidth()</p>
+                    <p>innerHeight()</p>
+                    <p>outerWidth()</p>
+                    <p>outerHeight()</p>
+                </ul>
+                <h3>jQuery width() and height() Methods</h3>
+                <p>The width() method sets or returns the width of an element (excludes padding, border and margin).</p>
+                <p>The height() method sets or returns the height of an element (excludes padding, border and margin).
+                </p>
+                <p>The following example returns the width and height of a specified
+                    &lt;div&gt; element:</p>
+                <ul>
+                    <li>$("button").click(function(){</li>
+                    <li>var txt = "";</li>
+                    <li>txt += "Width: " + $("#div1").width() + "&lt;br&gt;";</li>
+                    <li> txt += "Height: " + $("#div1").height();</li>
+                    $("#div1").html(txt);</li>
+                    <li> });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 72</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery innerWidth() and innerHeight() Methods</h3>
+                <p>The innerWidth() method returns the width of an element (includes padding).</p>
+                <p>The innerHeight() method returns the height of an element (includes padding).</p>
+                <p>The following example returns the inner-width/height of a specified &lt;div&gt; element:</p>
+                <ul>
+                    <p>$("button").click(function(){</p>
+                    <p> var txt = "";</p>
+                    <p> txt += "Inner width: " + $("#div1").innerWidth() + "&lt;br&gt;";</p>
+                    <p> txt += "Inner height: " + $("#div1").innerHeight();</p>
+                    <p> $("#div1").html(txt);
+                    <p> });</p>
+                </ul>
+                <h3>jQuery outerWidth() and outerHeight() Methods</h3>
+                <p>The outerWidth() method returns the width of an element (includes padding and border).</p>
+                <p>The outerHeight() method returns the height of an element (includes padding and border).</p>
+                <p>The following example returns the outer-width/height of a specified &lt;div&gt;
+                    element:&lt;div&gt; element:</p>
+                <ul>
+                    <li>$("button").click(function(){</li>
+                    <li> var txt = "";</li>
+                    <li> txt += "Outer width: " + $("#div1").outerWidth() + "&lt;br&gt;";</li>
+                    <li> txt += "Outer height: " + $("#div1").outerHeight();</li>
+                    <li> $("#div1").html(txt);</li>
+                    <li> });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 73</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery innerWidth() and innerHeight() Methods</h3>
+                <p>The outerWidth(true) method returns the width of an element (includes padding, border, and
+                    margin).</p>
+                <p>The outerHeight(true) method returns the height of an element (includes padding, border, and
+                    margin).</p>
+                <ul>
+                    <p>$("button").click(function(){</p>
+                    <p> var txt = "";</p>
+                    <p>txt += "Outer width (+margin): " + $("#div1").outerWidth(true) + "</br>";</p>
+                    <p>txt += "Outer height (+margin): " + $("#div1").outerHeight(true);</p>
+                    <p> $("#div1").html(txt);</p>
+                    <p> });</p>
+                </ul>
+                <h3>jQuery More width() and height()</h3>
+                <p>The following example returns the width and height of the document (the HTML document) and window
+                    (the browser viewport):</p>
+                <ul>
+                    <li>$("button").click(function(){</li>
+                    <li> var txt = "";</li>
+                    <li> txt += "Document width/height: " + $(document).width();</li>
+                    <li> txt += "x" + $(document).height() + "\n";</li>
+                    <li> txt += "Window width/height: " + $(window).width();</li>
+                    <li> txt += "x" + $(window).height();</li>
+                    <li> alert(txt);</li>
+                    <li> });</li>
+                </ul>
+                <p>The following example sets the width and height of a specified
+                    &lt;div&gt; element:</p>
+                <ul>
+                    <li>$("button").click(function(){</li>
+                    <li> $("#div1").width(500).height(500);</li>
+                    <li> });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 74</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery innerWidth() and innerHeight() Methods</h3>
+                <p>The outerWidth(true) method returns the width of an element (includes padding, border, and
+                    margin).</p>
+                <p>The outerHeight(true) method returns the height of an element (includes padding, border, and
+                    margin).</p>
+                <ul>
+                    <p>$("button").click(function(){</p>
+                    <p> var txt = "";</p>
+                    <p>txt += "Outer width (+margin): " + $("#div1").outerWidth(true) + "</br>";</p>
+                    <p>txt += "Outer height (+margin): " + $("#div1").outerHeight(true);</p>
+                    <p> $("#div1").html(txt);</p>
+                    <p> });</p>
+                </ul>
+                <h3>jQuery More width() and height()</h3>
+                <p>The following example returns the width and height of the document (the HTML document) and window
+                    (the browser viewport):</p>
+                <ul>
+                    <li>$("button").click(function(){</li>
+                    <li> var txt = "";</li>
+                    <li> txt += "Document width/height: " + $(document).width();</li>
+                    <li> txt += "x" + $(document).height() + "\n";</li>
+                    <li> txt += "Window width/height: " + $(window).width();</li>
+                    <li> txt += "x" + $(window).height();</li>
+                    <li> alert(txt);</li>
+                    <li> });</li>
+                </ul>
+                <p>The following example sets the width and height of a specified
+                    &lt;div&gt; element:</p>
+                <ul>
+                    <li>$("button").click(function(){</li>
+                    <li> $("#div1").width(500).height(500);</li>
+                    <li> });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>lesson 76</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <h3>jQuery Traversing - Ancestors</h3>
+                <p>With jQuery you can traverse up the DOM tree to find ancestors of an element.</p>
+                <p>An ancestor is a parent, grandparent, great-grandparent, and so on.</p>
+                <h3>Traversing Up the DOM Tree</h3>
+                <p>Three useful jQuery methods for traversing up the DOM tree are:</p>
+                <ul>
+                    <p>parent()</p>
+                    <p>parents()</p>
+                    <p>parentsUntil()</p>
+                </ul>
+                <h3>jQuery parent() Method</h3>
+                <p>The parent() method returns the direct parent element of the selected element.</p>
+                <p>This method only traverse a single level up the DOM tree.</p>
+                <p>The following example returns the direct parent element of each  &lt;span&gt; elements:</p>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li> $("span").parent();</li>
+                    <li> });</li>
+                </ul>
+                <p>jQuery parents() Method</p>
+                <p>The parents() method returns all ancestor elements of the selected element, all the way up to the
+                    document's
+                    root element (&lt;html&gt;).The following example returns all ancestors of all &lt;span&gt;
+                    elements:
+                </p>
+                <ul>
+                    <li>$(document).ready(function(){</li>
+                    <li> $("span").parents();</li>
+                    <li> });</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Finish</h2>
+                <img src="assets/img/card-img/a.jpg" alt="jquery image">
+                <button class="btnEight" onclick="myFunf()">well done! You understand jQuery!</button>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <footer id="footerAbsolute">Author: makho kukhianidze</footer>
+    <script src="assets/javascript/jQueryTutorial.js"></script>
+</body>
+
+</html>
