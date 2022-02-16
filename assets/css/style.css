@@ -38,6 +38,26 @@ margin: 4px;
 .tabMenu button.active {
   background: rgb(65, 26, 104);
 }
+.tabMenu a {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+  color: white;
+}
+
+.tabMenu a:hover {
+  background: rgb(80, 37, 122);
+}
+.tabMenu a.active {
+  background: rgb(65, 26, 104);
+}
 .tabcontent {
   display: none;
   padding: 6px 12px;
